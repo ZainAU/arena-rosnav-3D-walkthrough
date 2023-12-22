@@ -1,4 +1,6 @@
-# Catkin Errors
+Installing ROSnav-3D
+Follow instructions on [arena-rosnav-3D's installation page](https://github.com/ZainAU/arena-rosnav-3D-walkthrough/blob/main/docs/Installation.md)
+## Catkin Errors
 ## Catkin_make errors
 ### Using Pedsim
 ```
