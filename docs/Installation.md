@@ -8,8 +8,10 @@ export PYTHONPATH=$HOME/catkin_ws/devel/lib/python3/dist-packages:${PYTHONPATH}
 export PYTHONPATH=$HOME/catkin_ws/src/arena-rosnav-3D:${PYTHONPATH}
 export PYTHONPATH=$HOME/rosws/devel/lib/python3/dist-packages:${PYTHONPATH}
 ```
+```
 sudo apt-get install ros-noetic-hector-gazebo-plugins
 sudo apt install ros-noetic-libhector-gazebo-ros-imu
+```
 
 # 1. Installation
 
