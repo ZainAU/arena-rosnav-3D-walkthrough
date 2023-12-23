@@ -249,28 +249,28 @@ in order to train with an NVIDIA GPU RTX3090 you need the latest version of pyto
 pip3 install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
-# Trouble shooting
+# Troubleshooting
 
 - Follow this steps if you encounter the following stable-baseline related error:
 
-        #### Trouble Shooting
-        While trying the Quickstart you might encouter the following error in the second terminal:
-        ```
-        Traceback (most recent call last):
-          File "scripts/training/train_agent.py", line 229, in <module>
-            treshhold_type="succ", threshold=0.9, verbose=1)
-        TypeError: __init__() got an unexpected keyword argument 'treshhold_type'
-        ```
-        This error can be resolved by updating your stable baselines and your workspace. Therefore run the following commands:
-        ```
-        cd $HOME/catkin_ws/src/forks/stable-baselines3
-        pip install -e .
-        ```
-        ```
-        cd $HOME/catkin_ws/src/arena-rosnav
-        rosws update
-        ```
-        ```
-        cd $HOME/catkin_ws
-        catkin_make -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr/bin/python3
-        ```
+#### Troubleshooting
+While trying the Quickstart you might encouter the following error in the second terminal:
+```
+Traceback (most recent call last):
+  File "scripts/training/train_agent.py", line 229, in <module>
+    treshhold_type="succ", threshold=0.9, verbose=1)
+TypeError: __init__() got an unexpected keyword argument 'treshhold_type'
+```
+This error can be resolved by updating your stable baselines and your workspace. Therefore run the following commands:
+```
+cd $HOME/catkin_ws/src/forks/stable-baselines3
+pip install -e .
+```
+```
+cd $HOME/catkin_ws/src/arena-rosnav
+rosws update
+```
+```
+cd $HOME/catkin_ws
+catkin_make -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr/bin/python3
+```
